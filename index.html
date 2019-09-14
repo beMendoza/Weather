@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="weather">
+        <h1 class="weather__title">The weather</h1>
+
+        <form class="weather__form">
+            <label for="country" class="weather__form--label">Country</label>
+            <input type="text" placeholder="Search for the country that you want to know the weather" class="weather__form--input" id="country">
+        </form>
+
+        <h2 class="weather__location"></h2>
+        <!-- <img src="./img/hail.svg" alt="Weather" class="weather__img"> -->
+
+        <div class="weather__data">
+            <div class="weather__state">
+                <!-- <p class="weather__state--title title"></p>
+                <p class="weather__state--name"></p> -->
+            </div>
+
+            <div class="weather__temperature">
+                <!-- <p class="weather__temperature--title title"></p>
+                <p class="weather__temperature--min"></p>
+                <p class="weather__temperature--max"></p> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
