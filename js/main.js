@@ -77,7 +77,7 @@
             // Inserting the name of the country and it's city
             weatherLocation.innerHTML = `${data.parent.title}, <span class="weather__location--country">${data.title}</span>`;
 
-            // Inserting imagen
+            // Inserting image
             globalWeather.insertBefore(weatherLocation, weatherData);
             globalWeather.insertBefore(weatherImg, weatherData);
         }
