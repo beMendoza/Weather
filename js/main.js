@@ -62,8 +62,8 @@
             weatherStateName.textContent = data.consolidated_weather[0].weather_state_name;
 
             weatherTemperatureTitle.textContent = 'Temperatures';
-            weatherTemperatureMin.textContent = data.consolidated_weather[0].min_temp.toFixed(2);
-            weatherTemperatureMax.textContent = data.consolidated_weather[0].max_temp.toFixed(2);
+            weatherTemperatureMin.innerHTML = `Min: ${data.consolidated_weather[0].min_temp.toFixed(2)}&deg; C`;
+            weatherTemperatureMax.innerHTML = `Max: ${data.consolidated_weather[0].max_temp.toFixed(2)}&deg; C`;
 
             // Inserting in Weather State
             weatherState.appendChild(weatherStateTitle);
