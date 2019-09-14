@@ -82,11 +82,13 @@
             globalWeather.insertBefore(weatherImg, weatherData);
         }
 
+        // Clearing input fields
         const clearingInputs = () => {
             const fields = document.querySelectorAll('input');
 
             fieldsArr = Array.from(fields);
 
+            // Looping throught the input fields to clear them
             fieldsArr.map(element => {
                 element.value = '';
                 element.blur();
