@@ -39,6 +39,7 @@ img {
     justify-content: space-between;
     align-items: flex-start;
 }
+
 .weather__title {
     font-size: 8rem;
     font-weight: 800;
