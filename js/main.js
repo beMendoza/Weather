@@ -52,8 +52,6 @@
             const weatherLocation = await fetch(`${proxy}https://www.metaweather.com/api/api/location/${location}/`);
             const weatherLocationData = await weatherLocation.json();
 
-            console.log(weatherLocationData);
-
             return weatherLocationData;
         }
 
@@ -65,7 +63,7 @@
 
             weatherTemperatureTitle.textContent = 'Temperatures';
             weatherTemperatureMin.textContent = data.consolidated_weather[0].min_temp.toFixed(2);
-            weatherTemperatureMin.textContent = data.consolidated_weather[0].max_temp.toFixed(2);
+            weatherTemperatureMax.textContent = data.consolidated_weather[0].max_temp.toFixed(2);
 
             // Inserting in Weather State
             weatherState.appendChild(weatherStateTitle);
@@ -74,7 +72,7 @@
             // Inserting in Weather Temperature
             weatherTemperature.appendChild(weatherTemperatureTitle);
             weatherTemperature.appendChild(weatherTemperatureMin);
-            weatherTemperature.appendChild(weatherTemperatureMin);
+            weatherTemperature.appendChild(weatherTemperatureMax);
 
             // Inserting the name of the country and it's city
             weatherLocation.innerHTML = `${data.parent.title}, <span class="weather__location--country">${data.title}</span>`;
