@@ -82,6 +82,19 @@
             globalWeather.insertBefore(weatherImg, weatherData);
         }
 
+        const clearingInputs = () => {
+            const fields = document.querySelectorAll('input');
+
+            fieldsArr = Array.from(fields);
+
+            fieldsArr.map(element => {
+                element.value = '';
+                element.blur();
+            });
+
+            
+        }
+
         function getName(e) {
             if (e.keyCode === 13) {
                 e.preventDefault();
@@ -92,6 +105,7 @@
                     .then(response => weather(response))
                     .then(response => {
                         insertWeather(response);
+                        clearingInputs();
                     });
             }
         }
