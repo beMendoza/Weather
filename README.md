@@ -1,2 +1,2 @@
 # Asynchronous Weather
-My first asynchronous javascript project.
+My first asynchronous JavaScript project.
